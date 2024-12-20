@@ -20,8 +20,6 @@ cask "upwork" do
           "#{match[1].tr("_", ".")},#{match[2]}"
         end
     end
-    
-    auto_updates true
   
     app "Upwork.app"
 
