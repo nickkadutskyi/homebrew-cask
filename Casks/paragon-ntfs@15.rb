@@ -7,7 +7,7 @@ cask "paragon-ntfs@15" do
   desc "Paragon read-write NTFS driver"
   homepage "https://www.paragon-software.com/ufsdhome/ntfs-mac/"
 
-  onflicts_with cask: [
+  conflicts_with cask: [
     "paragon-ntfs",
   ]
   
