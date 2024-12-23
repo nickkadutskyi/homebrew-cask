@@ -10,6 +10,8 @@ cask "paragon-ntfs@15" do
   conflicts_with cask: [
     "paragon-ntfs",
   ]
+
+  depends_on macos: "<= :sonoma"
   
   # livecheck do
   #   url :homepage
