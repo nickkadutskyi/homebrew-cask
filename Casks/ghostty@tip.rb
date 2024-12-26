@@ -1,4 +1,4 @@
-cask "ghostty" do
+cask "ghostty@tip" do
   version "tip"
   sha256 :no_check
   depends_on macos: ">= :monterey"
