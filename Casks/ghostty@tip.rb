@@ -7,6 +7,13 @@ cask "ghostty@tip" do
   desc "👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration."
   homepage "https://ghostty.org/"
 
+  livecheck do
+    url "https://api.github.com/repos/ghostty-org/ghostty/commits/tip"
+    strategy :page_match do |page|
+      JSON.parse(page)["sha"][0..7]
+    end
+  end
+
   app "Ghostty.app"
   binary "#{appdir}/Ghostty.app/Contents/MacOS/ghostty"
   
