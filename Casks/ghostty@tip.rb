@@ -15,9 +15,8 @@ cask "ghostty@tip" do
   end
 
   conflicts_with cask: [
-                   "ghostty",
-                   "ghostty@tip",
-                 ]
+    "ghostty",
+  ]
 
   app "Ghostty.app"
   binary "#{appdir}/Ghostty.app/Contents/MacOS/ghostty"
