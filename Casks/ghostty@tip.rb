@@ -14,7 +14,7 @@ cask "ghostty@tip" do
     end
   end
 
-   conflicts_with cask:    [
+  conflicts_with cask: [
                    "ghostty",
                    "ghostty@tip",
                  ],
