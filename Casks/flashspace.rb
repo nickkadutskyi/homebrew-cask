@@ -7,6 +7,8 @@ cask "flashspace" do
   desc "Virtual workspace manager"
   homepage "https://github.com/wojciech-kulik/FlashSpace"
 
+  auto_updates true
+
   livecheck do
     url :url
     strategy :github_latest
