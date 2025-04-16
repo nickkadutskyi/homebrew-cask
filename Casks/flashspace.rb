@@ -1,6 +1,6 @@
 cask "flashspace" do
   version "3.1.37"
-  # sha256 "aba30fbd596fa95ebd977c28775247ef5a7e735dd5149f14611c701416a8ee1b"
+  sha256 "aba30fbd596fa95ebd977c28775247ef5a7e735dd5149f14611c701416a8ee1b"
   sha256 :no_check
 
   url "https://github.com/wojciech-kulik/FlashSpace/releases/download/v#{version}/FlashSpace.app.zip"
@@ -13,7 +13,6 @@ cask "flashspace" do
   livecheck do
     url :url
     strategy :github_latest
-    # regex(/v?(\d+\.\d+\.\d+)/i)
   end
 
   depends_on macos: ">= :sonoma"
